@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body class="bg-black">
-    <nav class="navbar navbar-expand-lg navbar-light bg-black text-light fixed-top py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black text-light fixed-top py-3">
         <div class="container text-light align-middle">
-          <a class="navbar-brand text-light position-absolute" href="#">
+          <a class="navbar-brand text-light" href="#">
             <img style="width: 35px;" src="logo.svg" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,10 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav w-25 d-flex justify-content-evenly">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Projects</a>
+                <a class="nav-link active text-light" aria-current="page" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">About</a>
+                <a class="nav-link text-light" href="#">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Contact</a>
@@ -33,19 +33,20 @@
       </nav>
 
       <div class="vw-100 vh-100 bg-black justify-content-center align-items-center d-flex ">
-        <div class="d-flex flex-column align-items-center vw-50 vh-50">
-          
+        <div class="container d-flex flex-column vw-50 vh-50">
           <div>
-          <h1 class="display-1 text-uppercase fw-bold text-light">Jacob Gervin</h1>
+          <h1 class=" display-1 text-uppercase fw-bold text-light">Jacob Gervin</h1>
           </div>
-          <h2 class="text-uppercase display-5">Webdeveloper</h2>
+          <h2 class="text-uppercase display-5 text-info">Webdeveloper</h2>
         </div>
       </div>
 
-      <div class="vw-100 vh-100 bg-light justify-content-center align-items-center d-flex position-relative ">
-        <div class="row w-100 h-100">
-          <div class="col d-flex flex-column justify-content-center">
-            <div class="bg-black h-50 w-75 d-flex flex-column justify-content-evenly align-items-center">
+      <div class="vw-100 h-auto min-vh-100 bg-light justify-content-center align-items-center d-flex ">
+        <div class="row w-100 h-auto">
+          <p class="threed col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center display-1 fw-bold">ABOUT</p>
+
+          <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center h-auto">
+            <div class="bg-black h-50 w-auto d-flex flex-lg-column flex-md-row justify-content-evenly align-items-center h-100 p-3">
               <div class="text-center">
                 <p class="h2 text-info">AGE</p>
                 <p class="h3 text-light">24</p>
@@ -60,14 +61,14 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
-            <p class="display-1 fw-bold">About me</p>
-            <p class="display-6">I am a webdeveloper, currently studying webdevelopment at Zealand
+          <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <p class="display-1 fw-bold">Who am i?</p>
+            <p class="display-6 container">I am a webdeveloper, currently studying webdevelopment at Zealand
               in Roskilde. I am passionate about developing interesting websites. 
              Privately im situated in Næstved
               with my girlfriend and our son.</p>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
             <p class="display-3 fw-bold ">Skills</p>          
             <div class="w-50 py-4 bg-black text-light my-3 text-center rounded h5">ANGULAR</div>
             <div class="w-50 py-4 bg-black text-light my-3 text-center rounded h5">REACT</div>
@@ -77,21 +78,46 @@
             <div class="w-50 py-4 bg-black text-light my-3 text-center rounded h5">UI/UX</div>
           </div>
         </div>
-        <p class="threed position-absolute ">ABOUT</p>
       </div>
 
       <div class="h-auto vw-100">
-        <div class="container vh-100 d-flex flex-column align-items-center">
-          <p class="display-1 fw-bold text-light mt-5">Projects</p>
+        <div class="container d-flex flex-column align-items-center my-5">
           <div class="row w-100 g-5 mt-5">
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projectone.png" alt="Project one"></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projecttwo.png" alt="Project two"></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projectthree.png" alt="Project three"></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projectfour.png" alt="Project four"></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projectfive.png" alt="Project five"></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden"><img src="projectsix.png" alt="Project six"></div>
+            <p class="threedprojects col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center display-1 fw-bold">Projects</p>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid" src="projectone.png" alt="Project one"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid"  src="projecttwo.png" alt="Project two"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid"  src="projectthree.png" alt="Project three"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid"  src="projectfour.png" alt="Project four"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid"  src="projectfive.png" alt="Project five"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 overflow-hidden justify-content-center align-items-center"><img class="img-fluid"  src="projectsix.png" alt="Project six"></div>
+
           </div>
         </div>
+
+      </div>
+
+      <div class="row vh-100 vw-100 bg-light">
+        <p class="threedcontact mt-5 d-flex flex-column align-items-center display-1 fw-bold">Contact</p>
+
+        <div class="container d-flex flex-column align-items-center">
+          <div class="row w-100 ">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+              <div>
+              <p class="h1 fw-bold my-4">Contact information</p>
+              <div class=" d-flex flex-row align-items-center">
+                <img src="phone.png" alt="phone">
+                <p class="h2 mx-2">4014 1319</p>
+              </div>
+              <div class="d-flex flex-row align-items-center mt-3">
+                <img class="w-2" src="email.png" alt="email">
+                <p class="h2 mx-2">jacobgervin@gmail.com</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>

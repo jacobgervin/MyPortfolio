@@ -1,0 +1,36 @@
+.header {
+  height: $header-height;
+  background-color: $header-background-color;
+  color: $header-text-color;
+  font-size: $header-text-size;
+
+  .logo {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  a {
+    color: $header-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
