@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma Portfolio</title>
+    <link rel="stylesheet" href="bulma/css/mystyles.css">
+  </head>
+  <body>
+
+    <nav class="navbar has-background-black " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="../logo.svg" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu has-background-black">
+          <div class="navbar-start has-text-white">
+            <a class="navbar-item has-text-white" href="#about">
+                About
+            </a>
+      
+            <a class="navbar-item has-text-white" href="#projects">
+              Projects
+            </a>
+
+            <a class="navbar-item has-text-white" href="#contact">
+                Contact
+              </a>
+          </div>
+    
+        </div>
+      </nav>
+      <section class="hero has-background-black is-fullheight-with-navbar">
+        <div class="hero-body">
+          <div class="">
+            <p class="title is-1 has-text-white">
+              Jacob Gervin
+            </p>
+            <p class="subtitle is-2 has-text-info">
+              Webdeveloper
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section is-large has-text-centered" id="about">
+       <h1 class="title is-3 block">About me</h1>
+        <div class="container is-fullhd">
+            <div class="columns">
+                <div class="column columns is-centered is-multiline has-background-black">
+                    <div class="block column is-two-thirds">
+                        <h5 class="title is-3 has-text-info">Age</h2>
+                            <p class="subtitle is-3 has-text-white">24</p>
+                    </div>
+                    <div class="block column is-two-thirds">
+                        <h5 class="title is-3 has-text-info">Age</h2>
+                            <p class="subtitle is-3 has-text-white">24</p>
+                    </div>
+                    <div class="block column is-two-thirds">
+                        <h5 class="title is-3 has-text-info">Age</h2>
+                        <p class="subtitle is-3 has-text-white">24</p>
+                    </div>
+                </div>
+                <div class="column content is-large">
+                    <h2 class="">
+                        Who am i?
+                    </h2>
+                    <p class="">
+                        I am a webdeveloper, currently studying webdevelopment at Zealand in Roskilde. I am passionate about developing interesting websites. Privately im situated in Næstved with my girlfriend and our son.
+                    </p>
+                </div>
+                <div class="column columns is-centered is-multiline">
+                    <div class="column is-half"><h3 class="title is-3">Skills</h3></div>
+                    <div class="colum is-half">
+                    <div class="block tag is-black is-large title is-5">Angular</div>
+                    <div class="block tag is-black is-large title is-5">React</div>
+                    <div class="block tag is-black is-large title is-5">PHP</div>
+                    <div class="block tag is-black is-large title is-5" >NODEJS</div>
+                    <div class="block tag is-black is-large title is-5">SQL</div>
+                    <div class="block tag is-black is-large title is-5">UI/UX</div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+      <section class="section is-large has-text-centered has-background-black has-text-white" id="projects">
+        <h1 class="title is-1 has-text-white">Projects</h1>
+        <div class="container is-fullhd">
+            <div class="columns is-desktop is-multiline">
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projectone.png">
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projecttwo.png">
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projectthree.png">
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projectfour.png">
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projectfive.png">
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image">
+                        <img src="../projectsix.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section is-large " id="contact">
+        <div class="container is-fullhd">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-half has-text-centered content is-large">
+                    <h2>Contact</h2>
+                    <p>jacobgervin@gmail.com</p>
+                    <p>40141319</p>
+                </div>
+              </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <a href="https://jacobgervin.dk">Bulma Portfolio</a>. <a href="https://jacobgervin.dk">Tailwind Portfolio</a>. <a href="https://jacobgervin.dk">Bootstrap Portfolio</a>.
+          </p>
+        </div>
+      </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+  
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+  
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+  
+      });
+    });
+  
+  });
+  </script>
+  </body>
+</html>
